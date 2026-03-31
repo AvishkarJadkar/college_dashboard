@@ -116,13 +116,38 @@ body {
 .bg-danger-soft { background-color: #fff2f2; }
 .bg-info-soft { background-color: #e2faff; }
 
-.text-success-soft { color: #00875a; }
-.text-warning-soft { color: #ffab00; }
-.text-danger-soft { color: #de350b; }
-
 .badge.bg-success-soft { color: #198754; }
-.badge.bg-warning-soft { color: #ffc107; }
+.badge.bg-warning-soft { color: #ff9800; }
 .badge.bg-danger-soft { color: #dc3545; }
+
+/* Custom Table Actions */
+.btn-action {
+    width: 32px;
+    height: 32px;
+    padding: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    transition: all 0.2s;
+}
+
+.btn-delete:hover {
+    background-color: #fff2f2;
+    color: #dc3545 !important;
+}
+
+/* Modal Customization */
+.modal-content {
+    border: none;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+
+.form-control:focus, .form-select:focus {
+    box-shadow: none;
+    background-color: #fff !important;
+    border: 1px solid #0d6efd !important;
+}
 
 /* Responsive Adjustments */
 @media (max-width: 768px) {
